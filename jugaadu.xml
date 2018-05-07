@@ -1,0 +1,957 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1" name="Homepage" layout:style="AdminLTE" layout:cellLayout="WRDefault/Frame" layout:gridLayout="WRDefault/Default" layout:frameLayout="AdminLTE/Panel" layout:attributeLayout="AdminLTE/Default" layout:fieldLayout="WRDefault/EntryUnit" layout:linkLayout="WRDefault/Default" landmarks="page2 page4 area1 lou8" homePage="page21">  
+  <OperationUnits> 
+    <ModuleInstanceUnit gr:x="1520" gr:y="40" id="miu1" action="true" name="Submit" moduleId="opm1"> 
+      <OKLink id="oln1" name="OKFlow1" to="mssu2"> 
+        <LinkParameter id="par63" name="Message_Shown Messages" source="ocp1" target="mssu2.shownMessages"/> 
+      </OKLink> 
+    </ModuleInstanceUnit>  
+    <ModuleInstanceUnit gr:x="555" gr:y="570" id="miu2" action="true" name="Log in" moduleId="opm2"> 
+      <KOLink id="kln9" name="KOFlow9" to="mssu6"> 
+        <LinkParameter id="par62" name="Message_Shown Messages" source="ocp4" target="mssu6.shownMessages"/> 
+      </KOLink> 
+    </ModuleInstanceUnit>  
+    <ModuleInstanceUnit gr:x="1410" gr:y="605" id="miu3" action="true" name="Sign up as Professional" moduleId="opm3"> 
+      <OKLink id="oln27" name="OKFlow27" to="mssu11"> 
+        <LinkParameter id="par109" name="Thank you for Registration_Shown Messages" sourceValue="Thank you for Registration" target="mssu11.shownMessages"/> 
+      </OKLink> 
+    </ModuleInstanceUnit>  
+    <NoOpOperationUnit gr:x="280" gr:y="140" id="opu3" name="Cancel"> 
+      <OKLink id="oln17" name="Cancel" to="page21" automaticCoupling="true"/> 
+    </NoOpOperationUnit>  
+    <LogoutUnit id="lou8" name="Logout" landmark="true" gr:x="510" gr:y="875" siteView="sv1"/>  
+    <ModuleInstanceUnit gr:x="1750" gr:y="400" id="miu4" action="true" moduleId="opm12"> 
+      <KOLink id="kln3" name="KOFlow3" to="mssu8"> 
+        <LinkParameter id="par100" name="Message_Shown Messages" source="ocp15" target="mssu8.shownMessages"/> 
+      </KOLink> 
+    </ModuleInstanceUnit>  
+    <DeleteUnit gr:x="2030" gr:y="490" id="dlu7" name="Delete" entity="ent1" gr:showAllParts="false"> 
+      <Selector id="su16" defaultPolicy="fill" booleanOperator="and"> 
+        <KeyCondition id="kcond11" name="KeyCondition11" predicate="in" implied="false"/> 
+      </Selector> 
+    </DeleteUnit>  
+    <ModifyUnit gr:x="1815" gr:y="485" id="mfu4" name="Update" entity="ent1" bulk="true"> 
+      <Selector id="su17" defaultPolicy="fill" booleanOperator="and"> 
+        <KeyCondition id="kcond12" name="KeyCondition12" predicate="in" implied="false"/> 
+      </Selector> 
+    </ModifyUnit>  
+    <ModuleInstanceUnit gr:x="2320" gr:y="695" id="miu6" action="true" moduleId="opm13"/>  
+    <NoOpOperationUnit gr:x="2340" gr:y="570" id="opu9" name="Cancel"> 
+      <OKLink id="oln36" name="OKFlow36" to="enu7" gr:bendpoints="-90,57,130,-43"/> 
+    </NoOpOperationUnit>  
+    <ModuleInstanceUnit gr:x="1945" gr:y="1420" id="miu7" action="true" moduleId="opm11"/>  
+    <DeleteUnit id="dlu8" name="Delete" gr:x="2205" gr:y="1380" entity="ent2"> 
+      <Selector id="su22" defaultPolicy="fill" booleanOperator="and"> 
+        <KeyCondition id="kcond13" name="KeyCondition4" predicate="in" implied="false"/> 
+      </Selector> 
+    </DeleteUnit>  
+    <ModifyUnit id="mfu3" name="Update" gr:x="2415" gr:y="1060" entity="ent2" bulk="true"> 
+      <Selector id="su23" defaultPolicy="fill" booleanOperator="and"> 
+        <KeyCondition id="kcond14" name="KeyCondition2" predicate="in" implied="false"/> 
+      </Selector> 
+    </ModifyUnit>  
+    <NoOpOperationUnit id="opu5" name="Cancel" gr:x="1835" gr:y="1325"> 
+      <OKLink id="oln37" name="OKFlow37" to="enu14" automaticCoupling="true" gr:bendpoints="68,-35,-67,70"/> 
+    </NoOpOperationUnit> 
+  </OperationUnits>  
+  <Page gr:x="1455" gr:y="175" id="page3" name="Registration Completed">  
+    <ContentUnits> 
+      <MultiMessageUnit gr:x="0" gr:y="0" id="mssu2" name="Message"/> 
+    </ContentUnits>  
+    <layout:Grid containerType="grid"> 
+      <layout:Row> 
+        <layout:Cell colspan="12"> 
+          <layout:Unit unitId="mssu2"/> 
+        </layout:Cell>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/> 
+      </layout:Row> 
+    </layout:Grid> 
+  </Page>
+  <Page gr:x="555" gr:y="375" id="page10" name="Error">  
+    <ContentUnits> 
+      <MultiMessageUnit gr:x="0" gr:y="0" id="mssu6" name="Message"/> 
+    </ContentUnits>  
+    <layout:Grid containerType="grid"> 
+      <layout:Row> 
+        <layout:Cell colspan="12"> 
+          <layout:Unit unitId="mssu6"/> 
+        </layout:Cell>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/> 
+      </layout:Row> 
+    </layout:Grid> 
+  </Page>
+  <Page gr:x="1240" gr:y="-5" id="page2" name="Registration" landmark="true">  
+    <ContentUnits> 
+      <EntryUnit gr:x="0" gr:y="0" id="enu5" name="Sign up " linkOrder="ln8" fieldOrder="fld29 fld30 fld31 fld33 fld32" entity="User"> 
+        <Field id="fld29" name="First Name" type="string" modifiable="true" attribute="userName"> 
+          <VRules> 
+            <MandatoryValidationRule id="mnd33" name="Mandatory"/> 
+          </VRules> 
+        </Field>  
+        <Link id="ln8" name="Submit" to="miu1" type="normal" validate="true"> 
+          <LinkParameter id="par39" name="Field29_Confirm Password" source="fld34" target="miu1.icp5"/>  
+          <LinkParameter id="par40" name="Email Id_Email Id" source="fld31" target="miu1.icp3"/>  
+          <LinkParameter id="par41" name="First Name_First Name" source="fld29" target="miu1.icp1"/>  
+          <LinkParameter id="par42" name="Last Name_Last Name" source="fld30" target="miu1.icp2"/>  
+          <LinkParameter id="par43" name="Mobile Number_Mobile Number" source="fld33" target="miu1.icp6"/>  
+          <LinkParameter id="par44" name="Password_Password" source="fld32" target="miu1.icp4"/> 
+        </Link>  
+        <Field id="fld30" name="Last Name" type="string" modifiable="true" attribute="att1"> 
+          <VRules> 
+            <MandatoryValidationRule id="mnd34" name="Mandatory"/> 
+          </VRules> 
+        </Field>  
+        <Field id="fld31" name="Email Id" type="string" modifiable="true" attribute="email"> 
+          <VRules> 
+            <MandatoryValidationRule id="mnd35" name="Mandatory"/>  
+            <EMailValidationRule id="email1" name="EMail"/> 
+          </VRules> 
+        </Field>  
+        <Field id="fld32" name="Password" type="password" modifiable="true" attribute="password"> 
+          <VRules> 
+            <MandatoryValidationRule id="mnd36" name="Mandatory"/>  
+            <ValueLengthValidationRule id="vl5" name="Value Length" predicate="min" value="6"/> 
+          </VRules> 
+        </Field>  
+        <Field id="fld33" name="Mobile Number" type="string" modifiable="true" attribute="att2"> 
+          <VRules> 
+            <MandatoryValidationRule id="mnd37" name="Mandatory"/>  
+            <ValueLengthValidationRule id="vl1" name="Value Length" predicate="min" value="10" errorMessage="Incorrect mobile number"/> 
+          </VRules> 
+        </Field> 
+      </EntryUnit> 
+    </ContentUnits>  
+    <layout:Grid containerType="grid"> 
+      <layout:Row> 
+        <layout:Cell colspan="12"> 
+          <layout:Unit unitId="enu5"> 
+            <layout:Link link="ln8"/>  
+            <layout:Field field="fld29"/>  
+            <layout:Field field="fld30"/>  
+            <layout:Field field="fld31"/>  
+            <layout:Field field="fld33"/>  
+            <layout:Field field="fld32"/> 
+          </layout:Unit> 
+        </layout:Cell>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/> 
+      </layout:Row> 
+    </layout:Grid> 
+  </Page>
+  <Page gr:x="410" gr:y="300" id="page4" name="Sign In" landmark="true">  
+    <ContentUnits> 
+      <EntryUnit gr:x="0" gr:y="0" id="enu4" name="SIgn in" entity="User" linkOrder="ln7"> 
+        <Field id="fld16" name="First name" type="string" modifiable="true" attribute="userName"> 
+          <VRules> 
+            <MandatoryValidationRule id="mnd25" name="Mandatory"/> 
+          </VRules> 
+        </Field>  
+        <Field id="fld17" name="Password" type="password" modifiable="true" attribute="password"> 
+          <VRules> 
+            <MandatoryValidationRule id="mnd26" name="Mandatory"/> 
+          </VRules> 
+        </Field>  
+        <Link id="ln7" name="Log in" to="miu2" type="normal" validate="true"> 
+          <LinkParameter id="par36" name="Email Id_Email" source="fld16" target="miu2.icp7"/>  
+          <LinkParameter id="par37" name="Password_Password" source="fld17" target="miu2.icp8"/> 
+        </Link> 
+      </EntryUnit> 
+    </ContentUnits>  
+    <layout:Grid containerType="grid"> 
+      <layout:Row> 
+        <layout:Cell colspan="12"> 
+          <layout:Unit unitId="enu4"> 
+            <layout:Field field="fld16"/>  
+            <layout:Field field="fld17"/>  
+            <layout:Link link="ln7"/> 
+          </layout:Unit> 
+        </layout:Cell>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/> 
+      </layout:Row> 
+    </layout:Grid> 
+  </Page>
+  <Page gr:x="1835" gr:y="620" id="page12" name="Professional info " protected="true">  
+    <ContentUnits> 
+      <PowerIndexUnit gr:x="50" gr:y="0" id="pwu8" name="Professional info" sortable="true" checkable="false" useCountQuery="false" entity="ent1" displayAttributes="att4 att5 att6 att7 att8 att9" linkOrder="ln22 ln27 ln28"> 
+        <Selector id="su11" defaultPolicy="fill" booleanOperator="and"> 
+          <AttributesCondition id="acond4" name="AttCondition4" predicate="eq" booleanOperator="or" implied="false" attributes="att3"/> 
+        </Selector>  
+        <Link id="ln22" name="Edit" to="mfu4" automaticCoupling="true" type="normal" validate="true"/>  
+        <Link id="ln27" name="Delete" to="dlu7" automaticCoupling="true" type="normal" validate="true"/>  
+        <Link id="ln28" name="Details" to="enu7" automaticCoupling="true" type="normal" validate="true" ajaxEnabled="true"/> 
+      </PowerIndexUnit>  
+      <GetUnit gr:x="210" gr:y="150" id="gtu1" name="Get1" contextParameters="UserCtxParam"> 
+        <Link id="ln2" name="Flow2" to="pwu8" type="transport" validate="true"> 
+          <LinkParameter id="par115" name="UserCtxParam.oid_AttCondition4" source="gtu1.UserCtxParam" target="acond4"/> 
+        </Link> 
+      </GetUnit>  
+      <EntryUnit gr:x="240" gr:y="5" id="enu7" name="Edit Professional" entity="ent1" linkOrder="ln29 ln35"> 
+        <Field id="fld11" name="First name" type="string" modifiable="true" attribute="att4"/>  
+        <Link id="ln29" name="Submit" to="miu6" type="normal" validate="true"> 
+          <LinkParameter id="par163" name="First name_First name" source="fld11" target="miu6.icp63"/> 
+        </Link>  
+        <Link id="ln35" name="Cancel" to="opu9" automaticCoupling="true" type="normal" validate="true"/>  
+        <Field id="fld18" name="Phone number" type="string" modifiable="true" attribute="att7"/>  
+        <Field id="fld15" name="Your Primary Profession" type="string" modifiable="true" attribute="att6"/>  
+        <Field id="fld19" name="Password" type="password" modifiable="true" attribute="att9"/>  
+        <Field id="fld34" name="Email" type="url" modifiable="true" attribute="att8"/> 
+      </EntryUnit>  
+      <PowerIndexUnit gr:x="0" gr:y="290" id="pwu12" name="Service requested by customers" sortable="true" checkable="false" useCountQuery="false" entity="ent6" linkOrder="ln51" displayAttributes="att36 att37 att38 role4.userName role4.att1 role4.att2"> 
+        <Selector id="su18" defaultPolicy="fill" booleanOperator="and"> 
+          <AttributesCondition id="acond13" name="AttCondition13" predicate="eq" booleanOperator="or" implied="false" attributes="role5.att3"/> 
+        </Selector>  
+        <Link id="ln51" name="Update Order" to="enu14" type="normal" validate="true"/> 
+      </PowerIndexUnit>  
+      <GetUnit gr:x="300" gr:y="310" id="gtu11" name="Get11" contextParameters="UserCtxParam"> 
+        <Link id="ln62" name="Flow62" to="pwu12" type="transport" validate="true"> 
+          <LinkParameter id="par189" name="UserCtxParam.oid_AttCondition13" source="gtu11.UserCtxParam" target="acond13"/> 
+        </Link> 
+      </GetUnit> 
+    </ContentUnits>  
+    <layout:Grid containerType="grid"> 
+      <layout:Row> 
+        <layout:Cell colspan="12"> 
+          <layout:Unit unitId="pwu8"> 
+            <layout:Link link="ln22"/>  
+            <layout:Link link="ln27"/>  
+            <layout:Link link="ln28"/>  
+            <layout:Attribute attribute="att4"/>  
+            <layout:Attribute attribute="att5"/>  
+            <layout:Attribute attribute="att6"/>  
+            <layout:Attribute attribute="att7"/>  
+            <layout:Attribute attribute="att8"/>  
+            <layout:Attribute attribute="att9"/> 
+          </layout:Unit> 
+        </layout:Cell>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/> 
+      </layout:Row>  
+      <layout:Row> 
+        <layout:Cell colspan="12"> 
+          <layout:Unit unitId="enu7"> 
+            <layout:Field field="fld11"/>  
+            <layout:Field field="fld18"/>  
+            <layout:Field field="fld15"/>  
+            <layout:Field field="fld19"/>  
+            <layout:Field field="fld34"/>  
+            <layout:Link link="ln29"/>  
+            <layout:Link link="ln35"/> 
+          </layout:Unit> 
+        </layout:Cell>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/> 
+      </layout:Row>  
+      <layout:Row> 
+        <layout:Cell colspan="12"> 
+          <layout:Unit unitId="pwu12"> 
+            <layout:Link link="ln51"/>  
+            <layout:Attribute attribute="att36"/>  
+            <layout:Attribute attribute="att37"/>  
+            <layout:Attribute attribute="att38"/>  
+            <layout:Attribute attribute="role4.userName"/>  
+            <layout:Attribute attribute="role4.att1"/>  
+            <layout:Attribute attribute="role4.att2"/> 
+          </layout:Unit> 
+        </layout:Cell>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/> 
+      </layout:Row>  
+      <layout:Row> 
+        <layout:Cell colspan="12"/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/> 
+      </layout:Row> 
+    </layout:Grid> 
+  </Page>
+  <Page gr:x="1940" gr:y="1175" id="page26" name="Order Status" ajaxEnabled="false">  
+    <ContentUnits> 
+      <EntryUnit gr:x="0" gr:y="0" id="enu14" name="Order Status" entity="ent2" linkOrder="ln53 ln59 ln18" fieldOrder="fld38 fld39 fld41 fld62 fld63 fld64 fld65 fld66"> 
+        <Field id="fld38" name="Effective date" type="date" modifiable="true" attribute="att11"/>  
+        <Field id="fld39" name="Effective time" type="time" modifiable="true" attribute="att12"/>  
+        <Field id="fld41" name="What is fixed ?" type="string" modifiable="true" attribute="att13"/>  
+        <Field id="fld62" name="Name of the customer" type="string" modifiable="true" attribute="att14"/>  
+        <Field id="fld63" name="Total cost for the services" type="string" modifiable="true" attribute="att16"/>  
+        <Field id="fld64" name="Gurantee for the services" type="string" modifiable="true" attribute="att17"/>  
+        <Field id="fld65" name="Name of the professional" type="string" modifiable="true" attribute="att24"/>  
+        <Field id="fld66" name="Status" type="string" modifiable="true" attribute="att39"/>  
+        <Link id="ln53" name="Click" to="miu7" type="normal" validate="true"> 
+          <LinkParameter id="par170" name="Name of the customer_customer name" source="fld62" target="miu7.icp54"/>  
+          <LinkParameter id="par171" name="Effective date_effective date" source="fld38" target="miu7.icp52"/>  
+          <LinkParameter id="par172" name="Effective time_effective time" source="fld39" target="miu7.icp53"/>  
+          <LinkParameter id="par173" name="Gurantee for the services_gurantee for the service" source="fld64" target="miu7.icp57"/>  
+          <LinkParameter id="par174" name="Name of the professional_name of the professional" source="fld65" target="miu7.icp58"/>  
+          <LinkParameter id="par175" name="Total cost for the services_Service cost" source="fld63" target="miu7.icp55"/>  
+          <LinkParameter id="par176" name="Status_Status" source="fld66" target="miu7.icp59"/>  
+          <LinkParameter id="par177" name="What is fixed ?_what to fix" source="fld41" target="miu7.icp56"/> 
+        </Link>  
+        <Link id="ln59" name="Cancel" to="opu5" type="normal" validate="true"/>  
+        <Link id="ln18" name="Flow18" to="pwu15" automaticCoupling="true" type="normal" validate="true" ajaxEnabled="true"/> 
+      </EntryUnit>  
+      <PowerIndexUnit gr:x="175" gr:y="0" id="pwu15" name="Order details" sortable="true" checkable="false" useCountQuery="false" linkOrder="ln60 ln61" entity="ent2" displayAttributes="att11 att12 att13 att14 att16 att17 att24 att39"> 
+        <Selector id="su20" defaultPolicy="fill" booleanOperator="and"/>  
+        <Link id="ln60" name="Delete" to="dlu8" automaticCoupling="true" type="normal" validate="true"/>  
+        <Link id="ln61" name="Update" to="mfu3" automaticCoupling="true" type="normal" validate="true"/> 
+      </PowerIndexUnit> 
+    </ContentUnits>  
+    <layout:Grid containerType="grid"> 
+      <layout:Row> 
+        <layout:Cell colspan="12"> 
+          <layout:Unit unitId="enu14"> 
+            <layout:Field field="fld38"/>  
+            <layout:Field field="fld39"/>  
+            <layout:Field field="fld41"/>  
+            <layout:Field field="fld62"/>  
+            <layout:Field field="fld63"/>  
+            <layout:Field field="fld64"/>  
+            <layout:Field field="fld65"/>  
+            <layout:Field field="fld66"/>  
+            <layout:Link link="ln53"/>  
+            <layout:Link link="ln59"/>  
+            <layout:Link link="ln18"/> 
+          </layout:Unit> 
+        </layout:Cell>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/> 
+      </layout:Row>  
+      <layout:Row> 
+        <layout:Cell colspan="12"> 
+          <layout:Unit unitId="pwu15"> 
+            <layout:Link link="ln60"/>  
+            <layout:Link link="ln61"/>  
+            <layout:Attribute attribute="att11"/>  
+            <layout:Attribute attribute="att12"/>  
+            <layout:Attribute attribute="att13"/>  
+            <layout:Attribute attribute="att14"/>  
+            <layout:Attribute attribute="att16"/>  
+            <layout:Attribute attribute="att17"/>  
+            <layout:Attribute attribute="att24"/>  
+            <layout:Attribute attribute="att39"/> 
+          </layout:Unit> 
+        </layout:Cell>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/> 
+      </layout:Row>  
+      <layout:Row> 
+        <layout:Cell colspan="12"/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/> 
+      </layout:Row> 
+    </layout:Grid> 
+  </Page>
+  <Page gr:x="1405" gr:y="825" id="page22" name="Thankyou for joining Jugaadu">  
+    <ContentUnits> 
+      <MultiMessageUnit gr:x="30" gr:y="30" id="mssu11" name="Message11"/> 
+    </ContentUnits>  
+    <layout:Grid containerType="grid"> 
+      <layout:Row> 
+        <layout:Cell colspan="12"> 
+          <layout:Unit unitId="mssu11"/> 
+        </layout:Cell>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/> 
+      </layout:Row> 
+    </layout:Grid> 
+  </Page>
+  <Page gr:x="1765" gr:y="235" id="page20" name="Error">  
+    <ContentUnits> 
+      <MultiMessageUnit gr:x="0" gr:y="0" id="mssu8" name="Message"/> 
+    </ContentUnits>  
+    <layout:Grid containerType="grid"> 
+      <layout:Row> 
+        <layout:Cell colspan="12"> 
+          <layout:Unit unitId="mssu8"/> 
+        </layout:Cell>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/>  
+        <layout:Cell/> 
+      </layout:Row> 
+    </layout:Grid> 
+  </Page>
+  <Page gr:x="35" gr:y="-80" id="page21" name="Welcome to Jugaadu">  
+    <ContentUnits> 
+      <MultiMessageUnit gr:x="5" gr:y="80" id="mssu3" name="Message3"> 
+        <Message xml:space="preserve">Jugaadu&#160;is an online home services marketplace which connects home service professionals to the customers.It has raised $27m in two rounds of funding from six investors including&#160;Amazon,&#160;Matrix Partners&#160;and&#160;Vertex Ventures. The company is based out of Rome and operates in Rome, Pisa ,Milan &amp; Venice.
+
+</Message>       </MultiMessageUnit>        <PowerIndexUnit gr:x="0" gr:y="0" id="pwu1" sortable="true" checkable="false" useCountQuery="false" name="Jugaadu.it" entity="ent3" displayAttributes="att20 att21 att27 att30 att31 att32 att33 att34"/>        <DataUnit id="dau3" name="Details" gr:x="0" gr:y="290" entity="ent5" displayAll="true" linkOrder="ln15">         <Selector id="su5" defaultPolicy="fill" booleanOperator="and">           <KeyCondition id="kcond5" name="KeyCondition11" predicate="in" implied="false"/>         </Selector>          <Link id="ln15" name="Cancel" to="opu3" automaticCoupling="true" type="normal" validate="true"/>       </DataUnit>        <PowerIndexUnit id="pwu5" name="Customers Review" linkOrder="ln13" gr:x="10" gr:y="165" sortable="true" checkable="false" useCountQuery="false" entity="ent5" displayAttributes="att26">         <Link id="ln13" name="Details" to="dau3" type="normal" automaticCoupling="true" validate="true"/>       </PowerIndexUnit>     </ContentUnits>      <layout:Grid containerType="grid">       <layout:Row>         <layout:Cell colspan="12"/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>       </layout:Row>        <layout:Row>         <layout:Cell colspan="12">           <layout:Unit unitId="mssu3"/>         </layout:Cell>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>       </layout:Row>        <layout:Row>         <layout:Cell colspan="12" rowspan="2">           <layout:Unit unitId="pwu1">             <layout:Attribute attribute="att20"/>              <layout:Attribute attribute="att21"/>              <layout:Attribute attribute="att27"/>              <layout:Attribute attribute="att30"/>              <layout:Attribute attribute="att31"/>              <layout:Attribute attribute="att32"/>              <layout:Attribute attribute="att33"/>              <layout:Attribute attribute="att34"/>           </layout:Unit>         </layout:Cell>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>       </layout:Row>        <layout:Row>         <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>       </layout:Row>        <layout:Row>         <layout:Cell colspan="12">           <layout:Grid containerType="cell">             <layout:Row>               <layout:Cell>                 <layout:Unit unitId="dau3">                   <layout:Link link="ln15"/>                    <layout:Attribute attribute="att29"/>                    <layout:Attribute attribute="att28"/>                    <layout:Attribute attribute="att26"/>                    <layout:Attribute attribute="att18"/>                 </layout:Unit>                  <layout:Unit unitId="pwu5">                   <layout:Link link="ln13"/>                    <layout:Attribute attribute="att26"/>                 </layout:Unit>               </layout:Cell>             </layout:Row>           </layout:Grid>         </layout:Cell>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>          <layout:Cell/>       </layout:Row>     </layout:Grid>  </Page>  <Area gr:x="1010" gr:y="320" id="area1" landmark="true" name="BECOME A PROFESSIONAL" landmarks="page6 page13" defaultPage="page6">      <OperationUnits/>      <Page gr:x="50" gr:y="290" id="page7" name="Jugaadu Terms and conditions">        <ContentUnits>         <MultiMessageUnit gr:x="50" gr:y="40" id="mssu5" name="Message5">           <Message xml:space="preserve">PLEASE READ THE TERMS OF USE THOROUGHLY AND CAREFULLY. The terms and conditions set forth below ("Terms of Use") and the Privacy Policy (as defined below) constitute a legally-binding agreement between Jugaadu Technologies India Pvt Ltd ("Jugaadu"), and you. These Terms of Use contain provisions that define your limits, legal rights and obligations with respect to your use of and participation in (i) the Jugaadu website and mobile application, including the classified advertisements, forums, various email functions and Internet links, and all content and Jugaadu services available through the domain and sub-domains of Jugaadu located at www.Jugaadu.com (collectively referred to herein as the "Website"), and (ii) the online transactions between those users of the Website who are offering services (each, a "Service Professional") and those users of the Website who are obtaining services (each, a "Service User") through the Website (such services, collectively, the "Services"). The Terms of Use described below incorporate the Privacy Policy and apply to all users of the Website, including users who are also contributors of video content, information, private and public messages, advertisements, and other materials or Services on the Website.
+
+</Message>         </MultiMessageUnit>       </ContentUnits>        <layout:Grid containerType="grid">         <layout:Row>           <layout:Cell colspan="12">             <layout:Unit unitId="mssu5"/>           </layout:Cell>            <layout:Cell/>            <layout:Cell/>            <layout:Cell/>            <layout:Cell/>            <layout:Cell/>            <layout:Cell/>            <layout:Cell/>            <layout:Cell/>            <layout:Cell/>            <layout:Cell/>            <layout:Cell/>         </layout:Row>       </layout:Grid>    </Page>    <Page gr:x="0" gr:y="0" id="page6" name="Sign up as a Professional" landmark="true">        <ContentUnits>         <EntryUnit gr:x="15" gr:y="0" id="enu3" name="Sign up" entity="ent1" linkOrder="ln4" fieldOrder="fld9 fld10 fld12 fld13 fld14 sfld1 fld37">           <Field id="fld9" name="First name" type="string" modifiable="true" attribute="att4">             <VRules>               <MandatoryValidationRule id="mnd10" name="Mandatory"/>             </VRules>           </Field>            <Field id="fld10" name="Last name" type="string" modifiable="true" attribute="att5">             <VRules>               <MandatoryValidationRule id="mnd11" name="Mandatory"/>             </VRules>           </Field>            <Field id="fld12" name="Phone number" type="string" modifiable="true" attribute="att7">             <VRules>               <MandatoryValidationRule id="mnd13" name="Mandatory"/>                <ValueLengthValidationRule id="vl2" name="Value Length" predicate="min" value="10"/>             </VRules>           </Field>            <Field id="fld13" name="Email" type="url" modifiable="true" attribute="att8" validationOrder="mnd9 email3">             <VRules>               <MandatoryValidationRule id="mnd9" name="Mandatory"/>                <EMailValidationRule id="email3" name="EMail"/>             </VRules>           </Field>            <Field id="fld14" name="Password" type="password" modifiable="true" attribute="att9">             <VRules>               <MandatoryValidationRule id="mnd12" name="Mandatory"/>             </VRules>           </Field>            <Link id="ln4" name="Submit" to="miu3" type="normal" validate="true">             <LinkParameter id="par69" name="Email_Email" source="fld13" target="miu3.icp11"/>              <LinkParameter id="par70" name="First name_First Name" source="fld9" target="miu3.icp10"/>              <LinkParameter id="par71" name="Last name_Last Name" source="fld10" target="miu3.icp9"/>              <LinkParameter id="par72" name="Password_Password" source="fld14" target="miu3.icp12"/>              <LinkParameter id="par73" name="Phone number_Phone Number" source="fld12" target="miu3.icp13"/>              <LinkParameter id="par74" name="Your Primary Profession_Your Primary Profession" source="sfld1" target="miu3.icp14"/>              <LinkParameter id="par162" name="Upload Photo_Photo" source="fld37" target="miu3.icp16"/>           </Link>            <SelectionField id="sfld1" name="Your Primary Profession" type="string" role="role8" validationOrder="mnd15" attribute="att6">             <VRules>               <MandatoryValidationRule id="mnd15" name="Mandatory"/>             </VRules>           </SelectionField>            <Field id="fld37" name="Upload Photo" type="blob" modifiable="true" attribute="att15" contentType="image">             <VRules>               <MandatoryValidationRule id="mnd39" name="Mandatory"/>             </VRules>           </Field>         </EntryUnit>          <MultiMessageUnit gr:x="145" gr:y="110" id="mssu4" name="Message4" linkOrder="ln5">           <Link id="ln5" name="Terms and Conditions" to="mssu5" type="normal" validate="true"/>            <Message xml:space="preserve">By creating account you agree to JUGAADU</Message> 
+        </MultiMessageUnit>  
+        <SelectorUnit gr:x="0" gr:y="145" id="seu1" name="Select profession" entity="ent4" distinctAttributes="att23"> 
+          <Link id="ln6" name="Flow6" to="enu3" type="transport" validate="true"> 
+            <LinkParameter id="par110" name="1_Your Primary Profession [label]" target="sfld1_label" source="att23Array"/>  
+            <LinkParameter id="par112" name="bijliwala_Your Primary Profession [output]" source="att23Array" target="sfld1_output"/> 
+          </Link> 
+        </SelectorUnit> 
+      </ContentUnits>  
+      <layout:Grid containerType="grid"> 
+        <layout:Row> 
+          <layout:Cell colspan="12"> 
+            <layout:Unit unitId="enu3"> 
+              <layout:Link link="ln4"/>  
+              <layout:Field field="fld9"/>  
+              <layout:Field field="fld10"/>  
+              <layout:Field field="fld12"/>  
+              <layout:Field field="fld13"/>  
+              <layout:Field field="fld14"/>  
+              <layout:Field field="sfld1"/>  
+              <layout:Field field="fld37"/> 
+            </layout:Unit> 
+          </layout:Cell>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row>  
+        <layout:Row> 
+          <layout:Cell colspan="12"> 
+            <layout:Unit unitId="mssu4"> 
+              <layout:Link link="ln5"/> 
+            </layout:Unit> 
+          </layout:Cell>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row>  
+        <layout:Row> 
+          <layout:Cell colspan="12"/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row> 
+      </layout:Grid> 
+    </Page>
+    <Page gr:x="445" gr:y="20" id="page13" name="Sign in as a Professional" landmark="true">  
+      <ContentUnits> 
+        <EntryUnit gr:x="0" gr:y="0" id="enu2" name="Sign in " entity="User" linkOrder="ln1" fieldOrder="fld1 fld2"> 
+          <Field id="fld1" name="First Name" type="string" modifiable="true" attribute="userName"/>  
+          <Field id="fld2" name="Password" type="password" modifiable="true" attribute="password"/>  
+          <Link id="ln1" name="Submit" to="miu4" type="normal" validate="true"> 
+            <LinkParameter id="par86" name="First Name_First name" source="fld1" target="miu4.icp61"/>  
+            <LinkParameter id="par88" name="Password_Password" source="fld2" target="miu4.icp62"/> 
+          </Link> 
+        </EntryUnit> 
+      </ContentUnits>  
+      <layout:Grid containerType="grid"> 
+        <layout:Row> 
+          <layout:Cell colspan="12"> 
+            <layout:Unit unitId="enu2"> 
+              <layout:Field field="fld1"/>  
+              <layout:Field field="fld2"/>  
+              <layout:Link link="ln1"/> 
+            </layout:Unit> 
+          </layout:Cell>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row> 
+      </layout:Grid> 
+    </Page>
+  </Area>
+  <Area gr:x="-55" gr:y="1020" id="area2" name="Welcome to Jugaadu" landmark="false" protected="true" defaultPage="page11">  
+    <OperationUnits> 
+      <ModuleInstanceUnit id="miu8" name="Proceed" gr:x="515" gr:y="395" action="true" moduleId="opm9"> 
+        <OKLink id="oln15" name="Next" to="page16" automaticCoupling="true"/> 
+      </ModuleInstanceUnit> 
+    </OperationUnits>  
+    <Page id="page8" name="your order" gr:x="725" gr:y="115">  
+      <layout:Grid> 
+        <layout:Row> 
+          <layout:Cell colspan="12"> 
+            <layout:Unit unitId="pwu6"> 
+              <layout:Attribute attribute="role5.att4"/>  
+              <layout:Attribute attribute="role5.att5"/>  
+              <layout:Attribute attribute="role5.att6"/>  
+              <layout:Attribute attribute="role5.att7"/>  
+              <layout:Attribute attribute="role5.att8"/>  
+              <layout:Link link="ln57"/> 
+            </layout:Unit> 
+          </layout:Cell>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row>  
+        <layout:Row> 
+          <layout:Cell colspan="12"/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row> 
+      </layout:Grid>  
+      <ContentUnits> 
+        <GetUnit id="gtu5" name="Get3" gr:x="305" gr:y="5" contextParameters="UserCtxParam"> 
+          <Link id="ln16" name="Flow16" to="pwu6" type="transport" validate="true"> 
+            <LinkParameter id="par85" name="UserCtxParam.oid_AttCondition1" source="gtu5.UserCtxParam" target="acond1"/> 
+          </Link> 
+        </GetUnit>  
+        <PowerIndexUnit gr:x="0" gr:y="0" id="pwu6" name="Your order" sortable="true" checkable="false" useCountQuery="false" entity="ent6" displayAttributes="role5.att4 role5.att5 role5.att6 role5.att7 role5.att8" linkOrder="ln57"> 
+          <Selector id="su14" defaultPolicy="fill" booleanOperator="and"> 
+            <AttributesCondition id="acond1" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="role4.userOID"/> 
+          </Selector>  
+          <Link id="ln57" name="Order Details" to="pwu16" type="normal" validate="true"> 
+            <LinkParameter id="par46" name="Where you want services ?ToOrder status.oid_current oid" source="data[].role9_att10" target="pwu16.current.att10"/> 
+          </Link> 
+        </PowerIndexUnit> 
+      </ContentUnits> 
+    </Page>
+    <Page gr:x="1075" gr:y="330" id="page27" name="Order Details">  
+      <ContentUnits> 
+        <PowerIndexUnit gr:x="0" gr:y="0" id="pwu16" name="Order Details" sortable="true" checkable="false" useCountQuery="false" entity="ent2" displayAttributes="att11 att12 att13 att14 att16 att17 att24 att39"> 
+          <Selector id="su21" defaultPolicy="fill" booleanOperator="and"/> 
+        </PowerIndexUnit> 
+      </ContentUnits>  
+      <layout:Grid containerType="grid"> 
+        <layout:Row> 
+          <layout:Cell colspan="12"> 
+            <layout:Unit unitId="pwu16"> 
+              <layout:Attribute attribute="att11"/>  
+              <layout:Attribute attribute="att12"/>  
+              <layout:Attribute attribute="att13"/>  
+              <layout:Attribute attribute="att14"/>  
+              <layout:Attribute attribute="att16"/>  
+              <layout:Attribute attribute="att17"/>  
+              <layout:Attribute attribute="att24"/>  
+              <layout:Attribute attribute="att39"/> 
+            </layout:Unit> 
+          </layout:Cell>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row>  
+        <layout:Row> 
+          <layout:Cell colspan="12"/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row> 
+      </layout:Grid> 
+    </Page>
+    <Page id="page16" name="Payment mode" gr:x="940" gr:y="510">  
+      <ContentUnits> 
+        <MultiMessageUnit id="mssu7" name="Click to proceed" linkOrder="ln31" gr:x="0" gr:y="0"> 
+          <Message xml:space="preserve">Payment mode would be COD. If you accept the payment mode click on next.</Message>  
+          <Link id="ln31" name="next" to="page14" type="normal" validate="true"/> 
+        </MultiMessageUnit> 
+      </ContentUnits>  
+      <layout:Grid containerType="grid"> 
+        <layout:Row> 
+          <layout:Cell colspan="12"> 
+            <layout:Unit unitId="mssu7"> 
+              <layout:Link link="ln31"/> 
+            </layout:Unit> 
+          </layout:Cell>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row> 
+      </layout:Grid> 
+    </Page>
+    <Page id="page17" name="Where do you require the service ?" gr:x="85" gr:y="320">  
+      <ContentUnits> 
+        <EntryUnit id="enu9" name="Enter the details" linkOrder="ln32" gr:x="0" gr:y="110" entity="ent6"> 
+          <Field id="fld40" name="House Number" type="string" modifiable="true" attribute="att36"> 
+            <VRules> 
+              <MandatoryValidationRule id="mnd23" name="Mandatory"/> 
+            </VRules> 
+          </Field>  
+          <Field id="fld42" name="Landmark" type="string" modifiable="true" attribute="att37"> 
+            <VRules> 
+              <MandatoryValidationRule id="mnd24" name="Mandatory"/> 
+            </VRules> 
+          </Field>  
+          <Field id="fld43" name="Locality" type="string" modifiable="true" attribute="att38"> 
+            <VRules> 
+              <MandatoryValidationRule id="mnd27" name="Mandatory"/> 
+            </VRules> 
+          </Field>  
+          <Link id="ln32" name="Click to proceed" to="miu8" type="normal" validate="true"> 
+            <LinkParameter id="par114" name="House Number_House number" source="fld40" target="miu8.icp42"/>  
+            <LinkParameter id="par121" name="Landmark_Landmark" source="fld42" target="miu8.icp43"/>  
+            <LinkParameter id="par122" name="Locality_Locality" source="fld43" target="miu8.icp44"/>  
+            <LinkParameter id="par123" name="oid_PASSING_provider" sourceLinkParameter="par125" target="miu8.icp47"/> 
+          </Link> 
+        </EntryUnit>  
+        <GetUnit id="gtu4" name="Get2" gr:x="105" gr:y="0" contextParameters="UserCtxParam"> 
+          <Link id="ln33" name="Flow29" to="miu8" type="transport" validate="true"> 
+            <LinkParameter id="par124" name="UserCtxParam.oid_requester" source="gtu4.UserCtxParam" target="miu8.icp46"/> 
+          </Link> 
+        </GetUnit> 
+      </ContentUnits>  
+      <layout:Grid containerType="grid"> 
+        <layout:Row> 
+          <layout:Cell colspan="12"> 
+            <layout:Unit unitId="enu9"> 
+              <layout:Field field="fld40"/>  
+              <layout:Field field="fld42"/>  
+              <layout:Field field="fld43"/>  
+              <layout:Link link="ln32"/> 
+            </layout:Unit> 
+          </layout:Cell>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row>  
+        <layout:Row> 
+          <layout:Cell colspan="12"/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row> 
+      </layout:Grid> 
+    </Page>
+    <Page id="page14" name="Booking " gr:x="1290" gr:y="530">  
+      <ContentUnits> 
+        <MultiMessageUnit id="mssu1" name="Final stage" gr:x="0" gr:y="0" linkOrder="ln56"> 
+          <Message xml:space="preserve">Booking has been done . Our representative will be in touch as soon as possibe.
+Thankyou for using JUGAADU.  </Message>  
+          <Link id="ln56" to="page11" type="normal" validate="true" name="Back to home page"/> 
+        </MultiMessageUnit> 
+      </ContentUnits>  
+      <layout:Grid containerType="grid"> 
+        <layout:Row> 
+          <layout:Cell colspan="12"> 
+            <layout:Unit unitId="mssu1"> 
+              <layout:Link link="ln56"/> 
+            </layout:Unit> 
+          </layout:Cell>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row>  
+        <layout:Row> 
+          <layout:Cell colspan="12"/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row> 
+      </layout:Grid> 
+    </Page>
+    <Page gr:x="0" gr:y="0" id="page11" landmark="false" name="How Can We Help You Today?">  
+      <ContentUnits> 
+        <EntryUnit gr:x="0" gr:y="0" id="enu6" name="Looking for any services ?" linkOrder="ln9 ln20" gr:showAllParts="true" entity="ent1" fieldOrder="fld36"> 
+          <Link id="ln9" name="Search" to="pwu2" type="normal" validate="true" ajaxEnabled="true"> 
+            <LinkParameter id="par45" name="Keyword_Services" source="fld36" target="acond3"/> 
+          </Link>  
+          <Field id="fld36" name="Keyword" type="string" modifiable="true" attribute="att6"/>  
+          <Link id="ln20" name="your order" to="page8" automaticCoupling="true" type="normal" validate="true"/> 
+        </EntryUnit>  
+        <PowerIndexUnit gr:x="190" gr:y="125" id="pwu2" name="Services Results" sortable="false" checkable="false" useCountQuery="false" entity="ent1" displayAttributes="att4 att5 att7 att8 att15 att6" gr:showAllParts="false" ajaxTooltipEnabled="false" ajaxTooltipEvent="doubleClick" linkOrder="ln34"> 
+          <Selector id="su3" defaultPolicy="fill" booleanOperator="or"> 
+            <AttributesCondition id="acond3" name="Services" predicate="contains" booleanOperator="or" implied="true" ignoreCase="true" attributes="att6"/> 
+          </Selector>  
+          <Link id="ln34" name="Proceed" to="enu9" type="normal" validate="true"> 
+            <LinkParameter id="par125" name="oid_PASSING" source="data[].att3" passing="true"/> 
+          </Link> 
+        </PowerIndexUnit> 
+      </ContentUnits>  
+      <layout:Grid containerType="grid"> 
+        <layout:Row> 
+          <layout:Cell colspan="12"/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row>  
+        <layout:Row> 
+          <layout:Cell colspan="12"> 
+            <layout:Unit unitId="enu6"> 
+              <layout:Field field="fld36"/>  
+              <layout:Link link="ln9"/>  
+              <layout:Link link="ln20"/> 
+            </layout:Unit> 
+          </layout:Cell>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row>  
+        <layout:Row> 
+          <layout:Cell colspan="12"> 
+            <layout:Unit unitId="pwu2"> 
+              <layout:Attribute attribute="att4"/>  
+              <layout:Attribute attribute="att5"/>  
+              <layout:Attribute attribute="att7"/>  
+              <layout:Attribute attribute="att8"/>  
+              <layout:Attribute attribute="att15"/>  
+              <layout:Attribute attribute="att6"/>  
+              <layout:Link link="ln34"/> 
+            </layout:Unit> 
+          </layout:Cell>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row>  
+        <layout:Row> 
+          <layout:Cell colspan="12"/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row>  
+        <layout:Row> 
+          <layout:Cell colspan="12"/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/>  
+          <layout:Cell/> 
+        </layout:Row> 
+      </layout:Grid> 
+    </Page>
+  </Area>
+</SiteView>
